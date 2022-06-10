@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body id="body">
+
+<div class="modo" id="botonMO">
+    <button class="modoBoton" id="botonMode">Cambiar a modo Oscuro</button>
+</div>    
+    
+<h1 id="tituloP">Cotizador de peliculas de Control solar</h1>   
+<div class="container">
+    <div class="contenidoA">        
+        <div class="titulos">
+            <p class="introduccion" id="parrafo1">
+                Para iniciar la cotizacion usted debe seleccionar el producto y despues seleccionar los metros lineales que necesita. El ancho del rollo es predeterminado de 1.524 metros 
+            </p>
+            <p class="productos" id="parrafo2">
+                Ingrese el producto que necesita.
+            </p>
+            <button id="btnPrecios" class="listaPrecios" type="submit">ver precios</button>
+        </div>
+        <div class="formulario">
+                    <label for="" id="label1"> escoge tu producto</label>
+                    <select id="item1">
+                        <option disabled selected value="">-- Seleccione --</option>
+                        <option value="Super optik">Super optik</option>
+                        <option value="Dyed Film">Dyed Film</option>
+                        <option value="Security film">Security film</option>
+                    </select>
+            
+            <label for="" id="label2"> Selecciona los metros lineales: <br><span>(Debe ser de un 1 metro en adelante)</span></label>
+            <input id="item2" type="text" name="metroLineal" placeholder="metro lineal"> <br>
+            <button id="btn" class="cotizar" type="submit">Cotizar producto</button>
+        </div>
+            <div>
+                <p id="parrafo3">Los datos de su cotizacion aqui</p>
+            </div>
+
+            <div class="contenido-precio">
+                <p id="parrafo4">El valor de su cotizacion es:</p>
+                <p id="resultado" class="precio"> 0</p>
+            </div>
+            <div class="contenido-descripcion">
+                <p id="descripcion"> </p>
+            </div>
+    </div>
+
+    <div class="contenidoB">
+
+        <div class="informacion">
+            <div class="contenidoInfo">
+                <p id="botonInfo1">Super optik</p>
+                <button id="botonSO" class="botonInfo">Ver Info</button>
+            </div>
+            <div class="contenidoInfo">
+                <p id="botonInfo2">Dyed Film</p>
+                <button id="botonDF" class="botonInfo">Ver Info</button>
+            </div>
+            <div class="contenidoInfo">
+                <p id="botonInfo3">Security Film</p>
+                <button id="botonSF" class="botonInfo">Ver Info</button>
+            </div>            
+        </div>
+
+        <img id="imagenft" src="img/intro.JPG" alt="" width="420px" height="280px">
+    </div>
+    
+    
+    
+
+
+</div>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
